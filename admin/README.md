@@ -55,3 +55,25 @@ main                     # Main directory
 ├── index.php            # Main index file
 └── README.md            # Main Readme file
 
+
+
+Data types:
+INT
+VARCHAR (255)
+Text
+longtext
+date
+timesatamp
+
+Create Database:
+Database_Name: php_tms
+http://localhost/phpmyadmin
+
+tables:
+
+tasks
+id | title | description | status | created_at | updated_at
+
+services
+id | title | subtitle| icon| description | status | created_at | updated_at
+
