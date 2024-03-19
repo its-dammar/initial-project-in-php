@@ -66,15 +66,24 @@
                     <div class="card text-center shadow-sm" style="width: 18rem;" >
                       <!-- <img src="https://dummyimage.com/200x200/dddddd/fff.png&text=200x200" class="img-thumbnail" alt="..."> -->
                       <div class="card-body">
-                        <h5 class="card-title"> Taks</h5>
+                        <h5 class="card-title"> Tasks</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-danger bnt-sm ">View Tasks</a>
+                        <a href="tasks/index.php" class="btn btn-danger bnt-sm ">View Tasks</a>
+                        <a href="tasks/create.php" class="btn btn-info bnt-sm ">Add Task</a>
                       </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="bg-light py-3">
+        <div class="container text-center ">
+            <div class="title ">
+                <p>&copy; copyright By .....</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
