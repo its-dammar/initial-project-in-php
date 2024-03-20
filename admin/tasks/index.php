@@ -10,6 +10,19 @@
                     <a class="btn btn-primary btn-sm float-end" href="./create.php" role="button">Create Task</a>
             </div>
             <div class="card-body">
+                <?php
+                if(isset($_GET['msg'])){
+                    $msg=$_GET['msg'];
+                    if($msg=="delete"){
+                        echo "<div class='alert alert-success' role='alert'> Task Deleted successfully </div";
+                        header("Refresh:2; url=index.php");
+                    }
+                    if($msg=="error"){
+                        echo "<div class='alert alert-success' role='alert'> Task id not successfully Delete</div";
+                        header("Refresh:2; url=index.php");
+                    }
+                }
+                ?>
                 <table class="table">
                     <thead>
                         <tr>
@@ -31,9 +44,9 @@
                             <td><?php echo $data['title'] ; ?></td>
                             <td><?php echo $data['description'] ; ?></td>
                             <td>
-                                <a class="btn btn-primary btn-sm " href="#" role="button">Edit </a>
-                                <a class="btn btn-info btn-sm " href="#" role="button">View </a>
-                                <a class="btn btn-danger btn-sm " href="#" role="button">Delete </a>
+                                <a class="btn btn-primary btn-sm " href="edit.php?id=<?php echo $data['id']; ?>" role="button">Edit </a>
+                                <a class="btn btn-info btn-sm " href="show.php?id=<?php echo $data['id']; ?>" role="button">View </a>
+                                <a class="btn btn-danger btn-sm " onclick="return confirm('Do you want to delete this data???')" href="delete.php?id=<?php echo $data['id']; ?>" role="button">Delete </a>
                             </td>
                         </tr>
                         <?php
