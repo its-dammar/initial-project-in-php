@@ -74,6 +74,17 @@ tables:
 tasks
 id | title | description | status | created_at | updated_at
 
+
+Assignment:
+
 services
 id | title | subtitle| icon| description | status | created_at | updated_at
+
+INT AI | VARCHAR | VARCHAR | VARCHAR/TEXT | INT (AS Define:Default=1) | TIMESTAMP (Default: CURRENT_TIMESTAMP)
+
+
+students
+id | name | phone| email| password | status | created_at | updated_at
+
+INT AI | VARCHAR | VARCHAR | VARCHAR/TEXT | INT (AS Define:Default=1) | TIMESTAMP (Default: CURRENT_TIMESTAMP)
 
