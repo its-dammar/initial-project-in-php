@@ -1,5 +1,12 @@
+<?php
 
-<?php require("../config/config.php"); ?>
+require("../config/config.php");
+
+// session_start();
+//     require("../middleware/secure.php");
+
+
+?>
 <!doctype html>
 <html lang="en">
 

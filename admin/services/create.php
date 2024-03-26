@@ -11,7 +11,8 @@
             </div>
             <div class="col-lg-6">
                 <?php
-                if($_SERVER["REQUEST_METHOD"] == "POST") {
+                // if($_SERVER["REQUEST_METHOD"] == "POST") {
+                if(isset($_POST['save'])) {
                     $title= $_POST['title'];
                     $sub_title= $_POST['sub_title'];
                     $icon= $_POST['icon'];
@@ -53,7 +54,7 @@
                         <label for="description" class="form-label">Description</label>
                         <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" name="submit">Add task</button>
+                    <button type="submit" class="btn btn-primary" name="save">Add task</button>
                 </form>
             </div>
         </div>

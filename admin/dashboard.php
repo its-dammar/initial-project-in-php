@@ -1,3 +1,8 @@
+<?php
+require('config/config.php');
+require('middleware/secure.php');
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -50,7 +55,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Profile</a></li>
                                 <li><a class="dropdown-item" href="#">Setting</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                <li><a class="dropdown-item" href="auth/logout.php">Logout</a></li>
                             </ul>
                         </div>
                     </div>

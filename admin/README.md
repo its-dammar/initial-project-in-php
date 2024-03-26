@@ -65,6 +65,50 @@ longtext
 date
 timesatamp
 
+Queries:
+INSERT INTO table_name (fiend1, fiend2) VALUES ('$value1', '$value2');
+
+UPDATE table_name SET fiendname='$varialbe', iendname='$varialbe' Condition;
+UPDATE table_name SET fiendname='$varialbe', iendname='$varialbe' WHERE id= $id;
+
+SELECT * FROM Table_name;
+SELECT name, email FROM Table_name;
+
+DLELETE FROM Table_name condition;
+DLELETE FROM Table_name WHERE id= $id;
+
+DROP TABLE Table_name
+DROP DATABASE Table_name
+
+
+
+Functions:
+mysql();  database connection
+mysqli_query();  :connect database and query
+mysqli_fetch_array();  : fetch all data from database
+mysqli_fetch_assoc();  : fetch single row data from database
+destroy(); 
+
+
+Global variables:
+$_POST[''];  : INSERT data
+$_GET[''];  : Fetch data
+$_SESSION[''];  
+$_SERVER;
+
+
+Clause:
+WHERE
+ORDER BY
+LIMIT
+DESC
+ASCE
+
+
+
+
+
+
 Create Database:
 Database_Name: php_tms
 http://localhost/phpmyadmin
