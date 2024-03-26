@@ -2,9 +2,12 @@
 
 require("../config/config.php");
 
-// session_start();
-//     require("../middleware/secure.php");
+session_start();
 
+if (isset($_SESSION['username'])) {
+} else {
+    header("Refresh:0; url=../index.php");
+}
 
 ?>
 <!doctype html>
