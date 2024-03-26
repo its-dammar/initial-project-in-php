@@ -1,8 +1,10 @@
 <?php
 require("../config/config.php");
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    // $password = md5($_POST['password']);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
     if ($email != "" && $password != "") {
 

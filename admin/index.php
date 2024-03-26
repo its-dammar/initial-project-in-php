@@ -32,7 +32,7 @@
         <form action="auth/login.php" method="POST" enctype="multipart/form-data">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control"  name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" class="form-control"  name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
