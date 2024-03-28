@@ -94,7 +94,7 @@ Global variables:
 $_POST[''];  : INSERT data
 $_GET[''];  : Fetch data
 $_SESSION[''];  
-$_SERVER;
+$_SERVER
 
 
 Clause:

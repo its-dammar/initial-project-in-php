@@ -1,0 +1,46 @@
+
+**** Predefined Functions in SQL: ****
+Aggregate Functions: COUNT(), SUM(), AVG(), MIN(), MAX()
+String Functions: UPPER(), LOWER(), CONCAT(), SUBSTRING(), LEFT(), RIGHT()
+Date and Time Functions: DATE_FORMAT(), DATEDIFF(), DATE_ADD(), DATE_SUB()
+Mathematical Functions: ABS(), ROUND(), CEILING(), FLOOR(), POWER()
+Conversion Functions: CAST(), CONVERT(), TO_CHAR(), TO_DATE(), TO_NUMBER()
+Conditional Functions: IF(), CASE(), COALESCE(), NULLIF()
+Ranking Functions: ROW_NUMBER(), RANK(), DENSE_RANK(), NTILE()
+Window Functions: OVER(), PARTITION BY, ORDER BY
+String Manipulation Functions: LENGTH(), TRIM(), REPLACE(), INSTR(), REGEXP_REPLACE()
+Date and Time Manipulation Functions: EXTRACT(), DATE_TRUNC(), DATE_PART(), INTERVAL
+Mathematical Functions: SQRT(), LOG(), EXP(), SIN(), COS()
+Type Conversion Functions: CAST(), CONVERT(), TO_CHAR(), TO_DATE(), TO_NUMBER()
+System Functions: CURRENT_DATE, CURRENT_TIME, CURRENT_TIMESTAMP, USER, SESSION_USER
+Aggregate Functions: GROUP_CONCAT(), GROUPING(), GROUPING_ID(), GROUPING_SETS()
+JSON Functions: JSON_VALUE(), JSON_ARRAY(), JSON_OBJECT(), JSON_ARRAYAGG(), JSON_OBJECTAGG()
+XML Functions: XMLAGG(), XMLFOREST(), XMLPARSE(), XMLPI(), XMLROOT()
+Geospatial Functions: ST_DISTANCE(), ST_INTERSECTS(), ST_WITHIN(), ST_CONTAINS(), ST_AREA()
+Statistical Functions: STDDEV(), VARIANCE(), CORR(), COVAR_POP(), COVAR_SAMP()
+Window Functions: ROW_NUMBER(), RANK(), DENSE_RANK(), NTILE(), LAG(), LEAD()
+Ranking Functions: PERCENT_RANK(), CUME_DIST(), FIRST_VALUE(), LAST_VALUE(), NTH_VALUE()
+String Functions: CHAR_LENGTH(), POSITION(), TRIM(), CONCAT(), SUBSTRING()
+Date and Time Functions: DATE_PART(), DATE_TRUNC(), EXTRACT(), TO_CHAR(), TO_DATE()
+Mathematical Functions: ABS(), ROUND(), CEIL(), FLOOR(), POWER()
+Conditional Functions: IF(), CASE, COALESCE(), NULLIF()
+
+## Predefined Functions in SQL
+
+| Function                  | Description                                                           | Example                                                     |
+|---------------------------|-----------------------------------------------------                  |-------------------------------------------------------------|
+| `COUNT()`                 | Returns the number of rows that match a specified condition.          | `SELECT COUNT(*) FROM users;`                          |
+| `SUM()`                   | Calculates the sum of values in a column.                             | `SELECT SUM(salary) FROM employees;`                       |
+| `AVG()`                   | Calculates the average value of a column.                             | `SELECT AVG(age) FROM people;`                             |
+| `MIN()`                   | Returns the smallest value in a column.                               | `SELECT MIN(price) FROM products;`                          |
+| `MAX()`                   | Returns the largest value in a column.                                | `SELECT MAX(quantity) FROM inventory;`                      |
+| `UPPER()`                 | Converts a string to uppercase.                                       | `SELECT UPPER(name) FROM customers;`                        |
+| `LOWER()`                 | Converts a string to lowercase.                                       | `SELECT LOWER(city) FROM addresses;`                        |
+| `LEFT()`                  | Returns a specified number of characters from the left of a string.   | `SELECT LEFT(name, 3) FROM employees;`              |
+| `RIGHT()`                 | Returns a specified number of characters from the right of a string.  | `SELECT RIGHT(phone, 4) FROM contacts;`              |
+| `CONCAT()`                | Concatenates two or more strings.                                     | `SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM users;` |
+| `SUBSTRING()`             | Extracts a substring from a string.                                   | `SELECT SUBSTRING(description, 1, 50) FROM products;`        |
+| `DATE_FORMAT()`           | Formats a date as specified.                                          | `SELECT DATE_FORMAT(date_column, '%Y-%m-%d') FROM events;`    |
+
+These functions are commonly used in SQL queries to perform various operations such as aggregations, string manipulations, and date formatting. They help to retrieve and manipulate data efficiently from the database.
+

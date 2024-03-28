@@ -1,0 +1,186 @@
+
+In SQL (Structured Query Language), predefined functions are built-in functions provided by database management systems (DBMS) 
+to perform various operations on data. These functions enable users to manipulate, aggregate, and transform data within SQL queries. 
+
+in other words,
+SQL (Structured Query Language)** is a standard language for managing and manipulating relational databases.
+- It provides a set of commands for performing various operations such as querying data, inserting records, updating data, and deleting records.
+
+## Basic SQL Commands
+
+### SELECT Statement
+
+- Used to retrieve data from one or more tables.
+- Syntax:
+  ```sql
+  SELECT column1, column2
+  FROM table_name
+  WHERE condition;
+
+  Example:
+  SELECT * FROM employees WHERE department = 'IT';
+
+1. INSERT Statement
+Used to add new records to a table.
+Syntax:
+INSERT INTO table_name (column1, column2)
+VALUES (value1, value2);
+Example:
+INSERT INTO employees (name, age) VALUES ('John Doe', 30);
+
+2. UPDATE Statement
+Used to modify existing records in a table.
+Syntax:
+UPDATE table_name SET column1 = value1, column2 = value2
+WHERE condition;   
+Example:
+UPDATE employees SET age = 35 WHERE name = 'John Doe';
+
+3. DELETE Statement
+Used to remove records from a table.
+Syntax:
+DELETE FROM table_name WHERE condition;
+Example:
+DELETE FROM employees WHERE age > 40;
+
+4. CREATE TABLE Statement
+Used to create a new table in the database.
+Syntax:
+CREATE TABLE table_name (
+  column1 datatype,
+  column2 datatype,
+  ...
+);
+Example:
+CREATE TABLE employees (
+  id INT,
+  name VARCHAR(255),
+  age INT
+);
+
+5. ALTER TABLE Statement
+Used to modify an existing table (e.g., add or drop columns).
+Syntax:
+ALTER TABLE table_name ADD COLUMN column_name datatype;
+Example:
+ALTER TABLE employees ADD COLUMN department VARCHAR(50);
+
+6. DROP TABLE Statement
+Used to delete an existing table from the database.
+Syntax:
+DROP TABLE table_name;
+Example:
+DROP TABLE employees;
+
+7. CREATE INDEX Statement
+Used to create an index on a table for faster data retrieval.
+Syntax:
+CREATE INDEX index_name ON table_name (column_name);
+Example:
+CREATE INDEX idx_name ON employees (name);
+
+8. DROP INDEX Statement
+Used to remove an existing index from the database.
+Syntax:
+DROP INDEX index_name;
+Example:
+DROP INDEX idx_name;
+
+9. GRANT Statement
+Used to grant specific privileges to users or roles.
+Syntax:
+GRANT privilege ON object TO user;
+Example:
+GRANT SELECT ON employees TO user1;
+
+10. REVOKE Statement
+Used to revoke previously granted privileges.
+Syntax:
+REVOKE privilege ON object FROM user;
+Example:
+REVOKE SELECT ON employees FROM user1;
+
+11. COMMIT Statement
+Used to save changes made in the current transaction.
+Syntax:
+COMMIT;
+Example:
+COMMIT;
+
+12. ROLLBACK Statement
+Used to undo changes made in the current transaction.
+Syntax:
+ROLLBACK;
+Example:
+ROLLBACK;
+
+13. BEGIN TRANSACTION Statement
+Used to start a new transaction.
+Syntax:
+BEGIN TRANSACTION;
+Example:
+BEGIN TRANSACTION;
+
+14. SAVEPOINT Statement
+Used to set a point within a transaction for later rollback.
+Syntax:
+SAVEPOINT savepoint_name;
+Example:
+SAVEPOINT sp1;
+
+15. SET TRANSACTION Statement
+Used to set characteristics for the transaction.
+Syntax:
+SET TRANSACTION ISOLATION LEVEL isolation_level;
+Example:
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+
+
+Here's a brief overview of predefined functions in SQL:
+
+1. Aggregate Functions: These functions operate on a set of values and return a single value. Commonly used aggregate functions include 
+COUNT(), SUM(), AVG(), MIN(), and MAX(). They are often used in combination with the GROUP BY clause to perform calculations on groups of rows.
+Example:
+SELECT COUNT(*) FROM employees;
+SELECT AVG(salary) FROM employees WHERE department = 'Sales';
+
+2. String Functions: String functions manipulate string values stored in columns or provided as arguments. 
+Examples include UPPER(), LOWER(), CONCAT(), SUBSTRING(), LEFT(), and RIGHT(). They are useful for tasks such as changing the case of strings, 
+concatenating strings, or extracting substrings.
+Example:
+SELECT UPPER(last_name) FROM customers;
+SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM users;
+
+3. Date and Time Functions: These functions manipulate date and time values stored in columns or provided as arguments. 
+Common date and time functions include DATE_FORMAT(), DATEDIFF(), DATE_ADD(), and DATE_SUB(). They are used for tasks such as formatting dates, 
+calculating the difference between dates, or adding/subtracting intervals from dates.
+Example:
+SELECT DATE_FORMAT(order_date, '%Y-%m-%d') AS formatted_date FROM orders;
+SELECT DATEDIFF(end_date, start_date) AS days_difference FROM tasks;
+
+4. Mathematical Functions: Mathematical functions perform mathematical operations on numeric values. 
+Examples include ABS(), ROUND(), CEIL(), FLOOR(), POWER(), and SQRT(). They are used for tasks such as absolute value calculation, 
+rounding numbers, or calculating square roots.
+Example:
+SELECT ABS(-10) AS absolute_value;
+SELECT ROUND(price, 2) AS rounded_price FROM products;
+
+5. Conditional Functions: Conditional functions evaluate conditions and return different values based on the result. 
+Common conditional functions include IF(), CASE, and COALESCE(). They are used for tasks such as conditional value assignment or handling NULL values.
+Example:
+SELECT IF(quantity > 0, 'In Stock', 'Out of Stock') AS stock_status FROM products;
+SELECT CASE WHEN age < 18 THEN 'Minor' ELSE 'Adult' END AS age_group FROM users;
+
+6. Ranking Functions: Ranking functions assign a rank or row number to rows based on specified criteria.
+Examples include ROW_NUMBER(), RANK(), DENSE_RANK(), and NTILE(). They are often used to rank data based on specific attributes.
+Example:
+SELECT ROW_NUMBER() OVER (ORDER BY salary DESC) AS rank FROM employees;
+
+7. Window Functions: Window functions perform calculations across a set of rows related to the current row.
+Examples include OVER(), PARTITION BY, and ORDER BY clauses. They are used for tasks such as calculating moving averages or cumulative sums.
+Example:
+SELECT SUM(sales) OVER (PARTITION BY month ORDER BY day) AS cumulative_sales FROM daily_data;
+
+
+In summary, predefined functions in SQL provide a wide range of capabilities for manipulating and transforming data within SQL queries.
+These functions help users perform various operations efficiently and effectively, enhancing the functionality and flexibility of SQL queries.

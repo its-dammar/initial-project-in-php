@@ -1,0 +1,42 @@
+
+SQL Commands Lists
+## Data Definition Language (DDL)
+
+| Command             | Description                                              | Example                                                      |
+|---------------------|----------------------------------------------------------|--------------------------------------------------------------|
+| CREATE TABLE        | Creates a new table in the database.                     | `CREATE TABLE employees (id INT, name VARCHAR(255));`        |
+| ALTER TABLE         | Modifies an existing table (e.g., adds or drops columns).| `ALTER TABLE employees ADD COLUMN age INT;`                  |
+| DROP TABLE          | Deletes an existing table from the database.             | `DROP TABLE employees;`                                      |
+| CREATE INDEX        | Creates an index on a table for faster data retrieval.   | `CREATE INDEX idx_name ON employees (name);`                 |
+| DROP INDEX          | Removes an existing index from the database.             | `DROP INDEX idx_name;`                                       |
+
+## Data Manipulation Language (DML)
+
+| Command             | Description                                              | Example                                                      |
+|---------------------|----------------------------------------------------------|--------------------------------------------------------------|
+| INSERT INTO         | Inserts new records into a table.                       | `INSERT INTO employees (id, name) VALUES (1, 'John');`       |
+| UPDATE              | Modifies existing records in a table.                   | `UPDATE employees SET name = 'Jane' WHERE id = 1;`           |
+| DELETE FROM         | Deletes records from a table.                           | `DELETE FROM employees WHERE id = 1;`                        |
+
+## Data Control Language (DCL)
+
+| Command             | Description                                              | Example                                                      |
+|---------------------|----------------------------------------------------------|--------------------------------------------------------------|
+| GRANT               | Grants specific privileges to users or roles.           | `GRANT SELECT ON employees TO user1;`                        |
+| REVOKE              | Revokes previously granted privileges.                   | `REVOKE SELECT ON employees FROM user1;`                     |
+
+## Data Query Language (DQL)
+
+| Command             | Description                                              | Example                                                      |
+|---------------------|----------------------------------------------------------|--------------------------------------------------------------|
+| SELECT              | Retrieves data from one or more tables.                  | `SELECT * FROM employees WHERE department = 'IT';`           |
+
+## Transaction Control Language (TCL)
+
+| Command             | Description                                              | Example                                                      |
+|---------------------|----------------------------------------------------------|--------------------------------------------------------------|
+| COMMIT              | Saves changes made in the current transaction.           | `COMMIT;`                                                    |
+| ROLLBACK            | Undoes changes made in the current transaction.          | `ROLLBACK;`                                                  |
+| BEGIN TRANSACTION   | Starts a new transaction.                                | `BEGIN TRANSACTION;`                                         |
+| SAVEPOINT           | Sets a point within a transaction for later rollback.    | `SAVEPOINT sp1;`                                             |
+| SET TRANSACTION     | Sets characteristics for the transaction.                | `SET TRANSACTION ISOLATION LEVEL READ COMMITTED;`            |
