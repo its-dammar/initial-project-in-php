@@ -10,23 +10,24 @@ main                     # Main directory
 │   │   │   └── main.js
 │   │   ├── uploads      # Directory for uploaded files in the admin panel
 │   │   └── fonts        # Fonts directory for admin panel
-│   ├── layouts          # Admin layout templates
+│   ├── layouts          # Admin layout templates (includes)
 │   │   ├── header.php
 │   │   ├── navbar.php
 │   │   ├── sidebar.php
 │   │   └── footer.php
 │   ├── auth             # Authentication files for admin
-│   │   ├── login.php
-│   │   ├── register.php
-│   │   └── logout.php
+│   │   ├── login.php    #login process code
+│   │   ├── register.php #register process code
+│   │   └── logout.php   #logout process code
 │   ├── middleware       # Middleware scripts for admin
 │   │   └── secure.php
 │   ├── config           # Database connection configuration
 │   │   └── config.php
 │   ├── database         # Database related files
 │   │   └── database.sql
-│   ├── index.php        # Admin index file (login form)
+│   ├── index.php        # Admin index file (login form)UI/UX
 │   ├── dashboard.php    # Admin dashboard file
+│   ├── register.php     # Admin register file: UI/UX
 │   └── tasks            # Admin tasks directory
 │       ├── create.php
 │       ├── edit.php
@@ -94,7 +95,7 @@ Global variables:
 $_POST[''];  : INSERT data
 $_GET[''];  : Fetch data
 $_SESSION[''];  
-$_SERVER
+$_SERVER[''];
 
 
 Clause:
@@ -104,6 +105,25 @@ LIMIT
 DESC
 ASCE
 
+
+Wampp or Xammp server
+
+To create Project
+
+wampp
+    www
+        tms (project Name)
+
+Xampp
+    htdocs
+        tms (Project Name)
+
+To run run the project of php
+go to browser
+locahost/projectName
+
+For database management
+localhost/phpmyadmin
 
 
 
@@ -117,6 +137,7 @@ tables:
 
 tasks
 id | title | description | status | created_at | updated_at
+INT | VARCHAR (255) | TEXT | INT | TIMESTAMP | TIMESTAMP
 
 
 Assignment:

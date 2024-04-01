@@ -1,27 +1,71 @@
 
+
+
+Backend Web Development (Server side | Business Logic)
+Programming Languages: PHP, Python, Ruby, Java, and Node.js etc.
+
+It is the process of creating and maintaining the server-side logic of a web application/software system.
+Handels tasks such as data storage, retrival, and processing and communicate with cliend side application.
+The backend code interact with databases, APIs, and other externa; services.
+
+Backend Developers are responsible for optimizing the performance and scablebility of the server-side code.
+Implementation of APIs.
+
+
 PHP: Hypertext Preprocessor
 Introduction:
 PHP is a popular server-side scripting language used for web development. It is embedded within HTML code and executed on the server, generating dynamic web pages. Here are some key features of PHP:
 
-1. Easy to learn: PHP has a simple and intuitive syntax, making it accessible to beginners.
+1. **Easy to learn:** PHP has a simple and intuitive syntax, making it accessible to beginners.
 
-2. Platform independence: PHP runs on various operating systems, including Windows, macOS, and Linux.
+2. **Platform independence:** PHP runs on various operating systems, including Windows, macOS, and Linux.
 
-3. Extensive library support: PHP has a vast collection of built-in functions and libraries, allowing developers to accomplish complex tasks with ease.
+3. **Extensive library support:** PHP has a vast collection of built-in functions and libraries, allowing developers to accomplish complex tasks with ease.
 
-4. Database integration: PHP seamlessly integrates with popular databases like MySQL, PostgreSQL, and Oracle, enabling efficient data management.
+4. **Database integration:** PHP seamlessly integrates with popular databases like MySQL, PostgreSQL, and Oracle, enabling efficient data management.
 
-5. Scalability: PHP can handle high traffic websites and scale well with the growth of your application.
+5. **Scalability**: PHP can handle high traffic websites and scale well with the growth of your application.
 
-6. Frameworks and CMS: PHP has a rich ecosystem of frameworks (e.g., Laravel, Symfony) and content management systems (e.g., WordPress, Drupal) that simplify web development.
+6. **Frameworks and CMS:** PHP has a rich ecosystem of frameworks (e.g., Laravel, Symfony) and content management systems (e.g., WordPress, Drupal, joomula) that simplify web development. 
 
-To get started with PHP, you need a web server with PHP support (e.g., Apache, Nginx) and a PHP interpreter installed. You can embed PHP code within HTML using the `<?php` and `?>` tags.
+To get started with PHP, 
+You need a web server with PHP support (e.g., Apache, Nginx) and a PHP interpreter installed. You can embed PHP code within HTML using the 
+
+syntax:
+
+`<?php` 
+// code
+ `?>` 
+ 
 
 Example:
 <?php
     // PHP code goes here
     echo "Hello, World!";
 ?>
+
+variable:
+<?php
+$x= 30;
+$y= 30;
+$z= $x + $y;
+
+echo $z;
+
+ ?>
+
+Requirements:
+- Server (local server: localhost)
+  - Wampp server ( Windows)
+    - MYSQL : is a database management system
+    - Apache : Local server
+    - MariyaDB: database
+  
+  - XAMPP server (Windows, Mac, Linux)
+  - Lamp (Mac, Linux)
+  - Mamp (Linux)
+
+
 
 _________________________________________________________________________________
 
@@ -55,7 +99,7 @@ Remember, PHP is a server-side scripting language designed for web development, 
 
 _____________________________________________________________________________
 
-PHP Variables: Variables in PHP start with a $ sign, followed by the name of the variable. They do not need to be declared in advance, and their data type is automatically determined by the value it's assigned. For example, $txt = "Hello World"; or $x = 5;.
+**PHP Variables:** Variables in PHP start with a $ sign, followed by the name of the variable. They do not need to be declared in advance, and their data type is automatically determined by the value it's assigned. For example, $txt = "Hello World"; or $x = 5;.
 <?php
     $txt = "Hello World"; // String variable
     $x = 5; // Integer variable
@@ -64,16 +108,16 @@ PHP Variables: Variables in PHP start with a $ sign, followed by the name of the
 
 _______________________________________________________________________________
 
-PHP Data Types: PHP supports several data types. Here are examples of some of them:
+**PHP Data Types:** PHP supports several data types. Here are examples of some of them:
 
-Integer: Non-decimal numbers between -2,147,483,648 and 2,147,483,647.
-Float (or double): Numbers with a decimal point or in exponential form.
-String: A sequence of characters, like "Hello world!".
-Boolean: True or false.
-Array: An ordered map (contains value(s) indexed by key(s)).
-Object: Instances of classes.
-NULL: A special type representing a variable with no value.
-Resource: Holds references to external resources, like database connections.
+**Integer**: Non-decimal numbers between -2,147,483,648 and 2,147,483,647.
+**Float** (or double): Numbers with a decimal point or in exponential form.
+**String**: A sequence of characters, like "Hello world!".
+**Boolean**: True or false.
+**Array**: An ordered map (contains value(s) indexed by key(s)).
+**Object**: Instances of classes.
+**NULL**: A special type representing a variable with no value.
+**Resource**: Holds references to external resources, like database connections.
 
 <?php
     $str = "Hello world!"; // String
@@ -84,7 +128,7 @@ Resource: Holds references to external resources, like database connections.
 ?>
 ________________________________________________________________________________
 
-PHP Functions: A function is a block of statements that can be used repeatedly in a program.
+**PHP Functions:** A function is a block of statements that can be used repeatedly in a program.
 <?php
     function greet() {
         echo "Hello, World!";
@@ -95,7 +139,7 @@ PHP Functions: A function is a block of statements that can be used repeatedly i
 
 _______________________________________________________________________________
 
-PHP String Methods: PHP provides numerous functions to work with strings. Here are a few examples:
+**PHP String Methods:** PHP provides numerous functions to work with strings. Here are a few examples:
 strlen(): Returns the length of a string.
 str_word_count(): Counts the number of words in a string.
 strrev(): Reverses a string.
@@ -111,7 +155,7 @@ str_replace(): Replaces some characters in a string.
 
 ___________________________________________________________________________
 
-PHP Conditional Statements: PHP supports several conditional statements including if, else, elseif/else if.
+**PHP Conditional Statements:** PHP supports several conditional statements including if, else, elseif/else if.
 <?php
     $x = 10;
     $y = 20;
@@ -127,7 +171,7 @@ PHP Conditional Statements: PHP supports several conditional statements includin
 
 ______________________________________________________________________
 
-PHP Loops: PHP supports several loop types to iterate over blocks of code: while, do...while, for, and foreach.
+**PHP Loops:** PHP supports several loop types to iterate over blocks of code: while, do...while, for, and foreach.
 <?php
     // While loop
     $x = 1;
@@ -150,7 +194,7 @@ PHP Loops: PHP supports several loop types to iterate over blocks of code: while
 
 _______________________________________________
 
-PHP Error Handling: PHP has several ways to handle errors, including die() function, custom error handling functions, and error reporting settings.
+**PHP Error Handling**: PHP has several ways to handle errors, including die() function, custom error handling functions, and error reporting settings.
 <?php
     // Error handler function
     function customError($errno, $errstr) {
