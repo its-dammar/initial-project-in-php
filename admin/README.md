@@ -135,6 +135,22 @@ http://localhost/phpmyadmin
 
 tables:
 
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `phone` varchar(15) NOT NULL,
+  `address` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `pasword` text NOT NULL,
+  `status` int NOT NULL DEFAULT '1',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+COMMIT;
+
+
 tasks
 id | title | description | status | created_at | updated_at
 INT | VARCHAR (255) | TEXT | INT | TIMESTAMP | TIMESTAMP
