@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("Refresh:0; url=../register.php?msg=error");
             }
         }
+        
        
     } 
     else {

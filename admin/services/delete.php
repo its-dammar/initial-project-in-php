@@ -12,4 +12,5 @@ if(isset($_GET['id'])){
         echo "Error in deleting index.php?msg=error";
     }
 }
+$conn->close();
 ?>

@@ -40,6 +40,7 @@
                         header("Refresh:2;");
                     }
                 }
+                $conn->close();
                 ?>
 
                 <form action="#" method="POST" enctype="multipart/form-data">

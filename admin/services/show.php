@@ -19,6 +19,7 @@
                 $result=mysqli_query($conn, $select_data);
                 $receive_data=mysqli_fetch_assoc($result);
             }
+            $conn->close();
             
             ?>
                 <form action="#" method="POST" enctype="multipart/form-data">

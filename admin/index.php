@@ -24,9 +24,22 @@
             echo "<div class='alert alert-success' role='alert'>  Account added successfully </div";
             header("Refresh:2; url=index.php");
           }
-          if ($msg == "error") {
-            echo "<div class='alert alert-warning' role='alert'> Account is not added </div";
-            header("Refresh:2; url=index.php");
+          if(isset($_GET['msg'])){
+            $msg = $_GET['msg'];
+
+          if ($msg == "register") { 
+            echo "<div class='alert alert-success' role='alert'> Account added successfully </div";
+            header("Refresh:2; url=index.php"); 
+          }
+          }
+
+         if(isset($_GET['msg'])){
+            $msg = $_GET['msg'];
+
+          if ($msg == "error") { 
+            echo "<div class='alert alert-danger' role='alert'> Error in adding account </div";
+            header("Refresh:2; url=index.php"); 
+          }
           }
         }?>
         <form action="auth/login.php" method="POST" enctype="multipart/form-data">

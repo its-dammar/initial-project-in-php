@@ -35,6 +35,7 @@
                     }
                   
                 }
+                $conn->close();
                 ?>
 
                 <form action="#" method="POST" enctype="multipart/form-data">
